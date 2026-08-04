@@ -1,20 +1,32 @@
-<Doctype html>
-<html>
+1. Parametric Return Functions: Define a custom PHP function named 
+addNumbers() that takes two values as arguments, computes their arithmetic 
+total, and returns the result to the caller.
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <title> LAB </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<?php
-echo "Hello World "."<br>";
-//print "Hello World"
-#Comment
+    <?php
+        // Function Definition
+        function addNumbers($num1, $num2)
+        {
+            $total = $num1 + $num2;
+            return $total;
+        }
 
-$x= print "Anuska <br>";
-echo $x;
-/*
-This code print "Anuska" and stores the return value (1) in $x.
-Then it display the value of $x.
-*/
-?>
+        // Function Call
+        $a = 25;
+        $b = 15;
+
+        $result = addNumbers($a, $b);
+
+        // Display Output
+        echo "First Number: " . $a . "<br>";
+        echo "Second Number: " . $b . "<br>";
+        echo "Total = " . $result;
+    ?>
 </body>
 </html>

@@ -1,7 +1,8 @@
-3. Operator Matrix Evaluation: Create a program that demonstrates the 
-practical use of multiple operator categories: Arithmetic (+, -, *, /, %), 
-Assignment (+=, -=), Logical combinations (&&, ||, !), and Pre/Post 
-Increment structures ($i++, ++$i).
+3. String Processing Suite: Write a single script that processes text values using 
+at least 8 native string functions, demonstrating utilities like character 
+counting, pattern positioning, case transformation, slicing, and string 
+replacements (e.g., strlen(), strrev(), strpos(), strtolower(), 
+strtoupper(), substr(), and str_replace()).
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,47 +12,34 @@ Increment structures ($i++, ++$i).
 </head>
 <body>
     <?php
-        $a = 10;
-        $b = 5;
+        $text = "Welcome to PHP Programming";
 
-        // Arithmetic Operators
-        echo "Arithmetic Operators <br>";
-        echo "Addition = " . ($a + $b) . "<br>";
-        echo "Subtraction = " . ($a - $b) . "<br>";
-        echo "Multiplication = " . ($a * $b) . "<br>";
-        echo "Division = " . ($a / $b) . "<br>";
-        echo "Modulus = " . ($a % $b) . "<br><br>";
+        // Original String
+        echo "Original String: " . $text . "<br><br>";
 
-        // Assignment Operators
-        echo "Assignment Operators <br>";
-        $a += 5;
-        echo "After += : " . $a . "<br>";
+        // 1. strlen()
+        echo "Length: " . strlen($text) . "<br>";
 
-        $a -= 3;
-        echo "After -= : " . $a . "<br><br>";
+        // 2. strrev()
+        echo "Reverse: " . strrev($text) . "<br>";
 
-        // Logical Operators
-        $x = true;
-        $y = false;
+        // 3. strpos()
+        echo "Position of 'PHP': " . strpos($text, "PHP") . "<br>";
 
-        echo "Logical Operators <br>";
-        echo "AND (&&): ";
-        var_dump($x && $y);
+        // 4. strtolower()
+        echo "Lowercase: " . strtolower($text) . "<br>";
 
-        echo "<br>OR (||): ";
-        var_dump($x || $y);
+        // 5. strtoupper()
+        echo "Uppercase: " . strtoupper($text) . "<br>";
 
-        echo "<br>NOT (!): ";
-        var_dump(!$x);
+        // 6. substr()
+        echo "Substring: " . substr($text, 11, 3) . "<br>";
 
-        echo "<br><br>";
+        // 7. str_replace()
+        echo "Replace: " . str_replace("PHP", "Java", $text) . "<br>";
 
-        // Increment Operators
-        $i = 5;
-
-        echo "Pre Increment (++i): " . ++$i . "<br>";
-        echo "Post Increment (i++): " . $i++ . "<br>";
-        echo "Value of i after Post Increment: " . $i;
+        // 8. ucwords()
+        echo "Capitalize Words: " . ucwords(strtolower($text)) . "<br>";
     ?>
 </body>
 </html>
