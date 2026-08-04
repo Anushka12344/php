@@ -1,6 +1,3 @@
-/*2. Constants vs. Variables: Define a global configuration constant (e.g., 
-COLLEGE or CURRENCY) using the define() utility. Write a text block showing 
-how it behaves differently from a standard, mutable variable instance.*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +7,10 @@ how it behaves differently from a standard, mutable variable instance.*/
 </head>
 <body>
     <?php
-        // Constant
-        define("COLLEGE", "ABC College");
-
-        // Variable
-        $college = "XYZ College";
-
-        // Display values
-        echo "Constant: " . COLLEGE . "<br>";
-        echo "Variable: " . $college . "<br><br>";
-
-        // Change variable
-        $college = "National College";
-
-        echo "After changing variable:<br>";
-        echo "Constant: " . COLLEGE . "<br>";
-        echo "Variable: " . $college;
+    echo "Hello Anuska"."<br/>";
+    echo "Mango <br/>";
+    $a= print "Hello <br/>";
+    echo $a;
     ?>
 </body>
 </html>
